@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Tools Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Landing Section -->
+  <header>
+    <h1>Discover Powerful Online Tools</h1>
+    <p>Scroll down to explore a wide collection of tools. Click a card to see full details!</p>
+  </header>
+
+  <!-- Filter Buttons -->
+  <div class="filter-bar">
+    <button class="active" onclick="filterCards('all')">All</button>
+    <button onclick="filterCards('design')">Design</button>
+    <button onclick="filterCards('productivity')">Productivity</button>
+    <button onclick="filterCards('ai')">AI</button>
+    <button onclick="filterCards('other')">Other</button>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search tools by name or description...">
+  </div>
+
+  <!-- Tools Grid -->
+  <div class="grid">
+    <!-- Canva -->
+    <div class="card" 
+         data-category="design" 
+         data-name="Canva" 
+         data-desc="Design anything with ease." 
+         data-longdesc="Canva is a powerful graphic design platform that allows anyone to easily create social media graphics, presentations, posters, documents, and other visual content. It comes with thousands of templates and a simple drag-and-drop editor." 
+         data-img="https://logos-world.net/wp-content/uploads/2020/02/Canva-New-Logo.png">
+      <img src="https://logos-world.net/wp-content/uploads/2020/02/Canva-New-Logo.png" alt="Canva">
+      <h3>Canva</h3>
+      <p class="short-desc">Design anything with ease.</p>
+    </div>
+
+    <!-- Notion -->
+    <div class="card" 
+         data-category="productivity" 
+         data-name="Notion" 
+         data-desc="Organize your work & life." 
+         data-longdesc="Notion is an all-in-one workspace where you can write notes, manage tasks, build databases, and collaborate with teams. It's flexible enough to serve as a project manager, wiki, or knowledge hub." 
+         data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png" alt="Notion">
+      <h3>Notion</h3>
+      <p class="short-desc">Organize your work & life.</p>
+    </div>
+
+    <!-- ChatGPT -->
+    <div class="card" 
+         data-category="ai" 
+         data-name="ChatGPT" 
+         data-desc="AI assistant for everything." 
+         data-longdesc="ChatGPT is an advanced conversational AI developed by OpenAI that can generate human-like text, answer questions, assist with writing, programming, brainstorming, and problem-solving across a wide range of topics." 
+         data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1024px-ChatGPT_logo.svg.png">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1024px-ChatGPT_logo.svg.png" alt="ChatGPT">
+      <h3>ChatGPT</h3>
+      <p class="short-desc">AI assistant for everything.</p>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="toolModal">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <img id="modalImg" src="" alt="">
+      <div class="modal-text">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
