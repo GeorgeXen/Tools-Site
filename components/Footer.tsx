@@ -13,7 +13,7 @@ export default function Footer() {
           <nav className="flex gap-4">
             <Link className="hover:text-white" href="/tools">Tools</Link>
             <Link className="hover:text-white" href="/map">Map</Link>
-            <a className="hover:text-white" href="https://nextjs.org" target="_blank" rel="noreferrer">Built on Next.js</a>
+            <a className="hover:text-white" href="/" target="_blank" rel="noreferrer">Built with 💜 from the community</a>
           </nav>
         </div>
       </div>
