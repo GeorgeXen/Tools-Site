@@ -1,0 +1,36 @@
+[
+  {
+    "id": "openai-chatgpt",
+    "name": "ChatGPT",
+    "slug": "chatgpt",
+    "shortDescription": "General AI assistant for writing, coding, research, and more.",
+    "description": "ChatGPT is a conversational AI that can help with writing, coding, brainstorming, and learning across many domains.",
+    "categories": ["Writing", "Programming", "Productivity"],
+    "tags": ["llm", "assistant", "multimodal"],
+    "pricing": "freemium",
+    "websiteUrl": "https://chat.openai.com/",
+    "logoUrl": "/brand/chatgpt.png",
+    "featured": true,
+    "upvotes": 5421,
+    "rating": 4.8,
+    "addedAt": "2023-01-01T00:00:00.000Z",
+    "models": ["GPT-4o", "GPT-4.1"]
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "slug": "midjourney",
+    "shortDescription": "AI image generation with artistic control.",
+    "description": "Midjourney is a leading AI image generation service producing high‑quality art and designs.",
+    "categories": ["Image Generation"],
+    "tags": ["images", "art", "creative"],
+    "pricing": "paid",
+    "websiteUrl": "https://www.midjourney.com/",
+    "logoUrl": "/brand/midjourney.png",
+    "upvotes": 3180,
+    "rating": 4.6,
+    "addedAt": "2023-02-10T00:00:00.000Z"
+  }
+]
+
+

@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  /* brand palette and shadow for components */
+  --color-brand-500: #635BFF;
+  --color-brand-600: #5546FF;
+  --color-brand-700: #4434D9;
+  --shadow-glow: 0 0 0 3px rgba(99,91,255,0.35);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- AI Tools Finder additions --- */
+.hero-bg {
+  background: radial-gradient(1200px 600px at 50% -10%, rgba(99,91,255,.25), transparent 60%),
+              radial-gradient(800px 400px at 80% 0%, rgba(0,212,255,.18), transparent 60%);
+}
+
+.cmdk-root { @apply w-full rounded-xl bg-neutral-900/80 backdrop-blur border border-neutral-800; }
+.cmdk-input { @apply w-full bg-transparent outline-none px-4 py-3 text-base; }
+.cmdk-list { @apply max-h-80 overflow-auto; }
+.cmdk-item { @apply px-4 py-2 cursor-pointer hover:bg-neutral-800/70; }
+.cmdk-empty { @apply px-4 py-6 text-neutral-400; }
