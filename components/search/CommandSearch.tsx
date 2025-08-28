@@ -28,7 +28,7 @@ export default function CommandSearch() {
       </button>
 
       {open && (
-        <div className="fixed inset-0 z-50 grid place-items-start bg-black/50 p-4 pt-40" onClick={() => setOpen(false)}>
+        <div className="fixed inset-0 z-50 grid place-items-center bg-black/50 p-4" onClick={() => setOpen(false)}>
           <div className="cmdk-root w-full max-w-2xl" onClick={e => e.stopPropagation()}>
             <Command aria-label="Global Search">
               <Command.Input value={query} onValueChange={setQuery} placeholder="Search tools, e.g., chat, image, agent…" className="cmdk-input" />

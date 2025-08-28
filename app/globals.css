@@ -15,6 +15,10 @@
   --color-brand-600: #5546FF;
   --color-brand-700: #4434D9;
   --shadow-glow: 0 0 0 3px rgba(99,91,255,0.35);
+  /* ToolAtlas surface/border tokens */
+  --color-surface-900: #0B0F19;
+  --color-surface-800: #0F1220;
+  --color-border-subtle: #1F2333;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,10 +35,9 @@ body {
 }
 
 /* --- AI Tools Finder additions --- */
-.hero-bg {
-  background: radial-gradient(1200px 600px at 50% -10%, rgba(99,91,255,.25), transparent 60%),
-              radial-gradient(800px 400px at 80% 0%, rgba(0,212,255,.18), transparent 60%);
-}
+/* ToolAtlas brand surface and purple */
+body { @apply bg-surface-900 text-white; }
+.hero-bg { background: radial-gradient(1200px 600px at 50% -10%, rgba(124,58,237,.25), transparent 60%); }
 
 .cmdk-root { @apply w-full rounded-xl bg-neutral-900/80 backdrop-blur border border-neutral-800; }
 .cmdk-input { @apply w-full bg-transparent outline-none px-4 py-3 text-base; }
